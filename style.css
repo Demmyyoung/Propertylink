@@ -152,6 +152,35 @@ nav.scrolled {
     color: var(--primary);
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main);
+    transition: var(--transition);
+}
+
+/* Hamburger Animation to X */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -179,6 +208,12 @@ nav.scrolled {
     font-size: 1.2rem;
     color: #f0f0f0;
     margin-bottom: 2rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* About Section */
@@ -405,10 +440,58 @@ footer {
     color: var(--text-muted);
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-    .hero h1 { font-size: 3rem; }
-    .about, .contact-container { grid-template-columns: 1fr; }
-    .neighborhood-grid { grid-template-columns: 1fr; height: auto; }
-    .neighborhood-item { height: 300px; }
+/* Responsive CSS */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    nav .btn {
+        display: none; /* Hide button on mobile to save space, or move it inside nav-links */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about, .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .neighborhood-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .neighborhood-item {
+        height: 300px;
+    }
 }
