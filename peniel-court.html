@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peniel Coast Gardens | Propertylink</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="scrolled">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Propertylink Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="property-details-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="index.html#properties">Properties</a> / Peniel Coast Gardens
+            </div>
+            <h1>Peniel Coast Gardens</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Akodo Ise, Ibeju-Lekki, Lagos</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="property-details-content">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <img src="img/Peniel-Court-1.png" alt="Peniel Coast Gardens">
+                    <div class="details-info">
+                        <h2>Description</h2>
+                        <p>Peniel Coast Gardens (frequently referred to as Peniel Court) is a prestigious mixed-use land development designed for residential and commercial investment. Located in the rapidly evolving Akodo Ise area of Ibeju-Lekki, it is situated perfectly for those seeking to capitalize on the region's massive industrial growth.</p>
+                        <p>The estate is in close proximity to major projects like the Dangote Refinery and the Lekki Free Trade Zone, making it a highly desirable asset with high appreciation potential. Its strategic location offers a blend of tranquility and industrial progress.</p>
+                        
+                        <h2>Amenities</h2>
+                        <div class="amenities-list">
+                            <div class="amenity-item"><i class="fas fa-road"></i> Premium Road Network</div>
+                            <div class="amenity-item"><i class="fas fa-shield-alt"></i> 24h Security</div>
+                            <div class="amenity-item"><i class="fas fa-bolt"></i> Electricity Supply</div>
+                            <div class="amenity-item"><i class="fas fa-tint"></i> Steady Water</div>
+                            <div class="amenity-item"><i class="fas fa-border-all"></i> Perimeter Fencing</div>
+                            <div class="amenity-item"><i class="fas fa-water"></i> drainage Channels</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Investment Details</h3>
+                        <div class="price-tag">₦9.5M - ₦11.5M</div>
+                        <p><strong>Title:</strong> Certificate of Occupancy (C of O)</p>
+                        <p><strong>Status:</strong> Mixed-Use Development</p>
+                        <p><strong>Plot Size:</strong> 600sqm</p>
+                    </div>
+
+                    <div class="sidebar-card map-card">
+                        <h3>Location Map</h3>
+                        <iframe src="https://maps.google.com/maps?q=Peniel%20Coast%20Gardens%20Ibeju%20Lekki&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+
+                    <div class="sidebar-card contact-mini-card" id="contact">
+                        <h3>Inquire Now</h3>
+                        <!-- Replace 'your-id' with your Formspree ID -->
+                        <form action="https://formspree.io/f/your-id" method="POST">
+                            <input type="hidden" name="_subject" value="Inquiry for Peniel Coast Gardens">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Propertylink Real Estate Investment Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348102350235" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Navbar Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

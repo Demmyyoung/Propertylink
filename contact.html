@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Propertylink Real Estate Investment Ltd</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="scrolled">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Propertylink Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="property-details-header" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero_lagos_waterfront.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Contact our Experts</h1>
+            <p>Our team is available to assist you with inquiries, property valuations, and investment advice.</p>
+        </div>
+    </header>
+
+    <!-- Full Contact Experience -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Headquarters</h2>
+                    <p style="margin-bottom: 30px; color: var(--text-muted);">Visit our office for a face-to-face consultation on your next property investment.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lagos Office</h4>
+                            <p>Plot 1B Block 77, Basheer Shittu, Magodo GRA Phase II, Lagos, Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p>0810 235 0235 | 0806 981 1935 | 0705 461 9972</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@propertylinkng.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM (By Appointment)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form glass-card">
+                    <h2 style="margin-bottom: 1.5rem; text-align: center;">Send an Online Inquiry</h2>
+                    <form action="https://formspree.io/f/your-id" method="POST">
+                        <input type="hidden" name="_subject" value="New Website Inquiry (Contact Page)">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <textarea name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Connect Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Full-width Map -->
+            <div class="map-container" style="margin-top: 80px; border-radius: var(--border-radius); overflow: hidden; height: 450px; border: 1px solid var(--glass-border);">
+                <iframe src="https://maps.google.com/maps?q=Magodo%20GRA%20Phase%20II%20Shangisha%20Lagos&t=&z=14&ie=UTF8&iwloc=&output=embed" style="height: 100%;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Propertylink Real Estate Investment Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348102350235" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Navbar Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

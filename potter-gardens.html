@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter Gardens & Park Estate | Propertylink</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="scrolled">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Propertylink Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="property-details-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="index.html#properties">Properties</a> / Potter Gardens & Park
+            </div>
+            <h1>Potter Gardens & Park Estate</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Eleran Igbe, Ibeju-Lekki, Lagos</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="property-details-content">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <img src="img/Potter-Gardens.png" alt="Potter Gardens & Park Estate">
+                    <div class="details-info">
+                        <h2>Description</h2>
+                        <p>Potter Gardens & Park Estate (Phase 2) is a masterpiece of modern real estate development located in the serene Eleran Igbe area of Ibeju-Lekki. Designed for those who value peace, security, and strategic investment, this estate offers a perfect blend of nature and urban planning.</p>
+                        <p>The estate is strategically situated along the Lekki-Epe Expressway, sharing a neighborhood with prestigious institutions like the Pan-Atlantic University and the Lagos Business School. It is an ideal location for both residential living and long-term capital appreciation.</p>
+                        
+                        <h2>Amenities</h2>
+                        <div class="amenities-list">
+                            <div class="amenity-item"><i class="fas fa-road"></i> Good Road Network</div>
+                            <div class="amenity-item"><i class="fas fa-shield-alt"></i> 24h Security</div>
+                            <div class="amenity-item"><i class="fas fa-bolt"></i> Electricity Supply</div>
+                            <div class="amenity-item"><i class="fas fa-tint"></i> Clean Water</div>
+                            <div class="amenity-item"><i class="fas fa-border-all"></i> Perimeter Fencing</div>
+                            <div class="amenity-item"><i class="fas fa-water"></i> Drainage System</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Investment Details</h3>
+                        <div class="price-tag">Starting from ₦1.5M</div>
+                        <p><strong>Title:</strong> Registered Survey & Deed of Assignment</p>
+                        <p><strong>Status:</strong> Buying & Building</p>
+                        <p><strong>Plot Size:</strong> 600sqm</p>
+                    </div>
+
+                    <div class="sidebar-card map-card">
+                        <h3>Location Map</h3>
+                        <iframe src="https://maps.google.com/maps?q=Potter%20Gardens%20and%20Park%20Estate%20Ibeju%20Lekki&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+
+                    <div class="sidebar-card contact-mini-card" id="contact">
+                        <h3>Inquire Now</h3>
+                        <!-- Replace 'your-id' with your Formspree ID -->
+                        <form action="https://formspree.io/f/your-id" method="POST">
+                            <input type="hidden" name="_subject" value="Inquiry for Potter Gardens & Park">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Propertylink Real Estate Investment Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348102350235" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Navbar Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

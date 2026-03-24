@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehoboth Gardens | Propertylink</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="scrolled">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Propertylink Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="property-details-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="index.html#properties">Properties</a> / Rehoboth Gardens
+            </div>
+            <h1>Rehoboth Gardens</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Simawa, Ogun State (near Redemption Camp)</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="property-details-content">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <img src="img/Rehoboth-Gardens-.png" alt="Rehoboth Gardens">
+                    <div class="details-info">
+                        <h2>Description</h2>
+                        <p>Rehoboth Gardens, located in the rapidly growing Simawa area, is a tranquil and highly affordable real estate investment. Situated in close proximity to the RCCG Redemption Camp, this estate offers a peaceful residential haven with substantial long-term growth potential.</p>
+                        <p>Designed with a community-first approach, the estate is perfect for families and investors who value security and structured planning in a burgeoning environment.</p>
+                        
+                        <h2>Amenities</h2>
+                        <div class="amenities-list">
+                            <div class="amenity-item"><i class="fas fa-sun"></i> Solar Street Lights</div>
+                            <div class="amenity-item"><i class="fas fa-shield-alt"></i> 24h Security</div>
+                            <div class="amenity-item"><i class="fas fa-road"></i> Well-Planned Road Network</div>
+                            <div class="amenity-item"><i class="fas fa-tint"></i> Steady Water Supply</div>
+                            <div class="amenity-item"><i class="fas fa-border-all"></i> Perimeter Fencing</div>
+                            <div class="amenity-item"><i class="fas fa-water"></i> drainage Systems</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Investment Details</h3>
+                        <div class="price-tag">Starting from ₦3.0M</div>
+                        <p><strong>Title:</strong> Registered Survey & Deed of Assignment</p>
+                        <p><strong>Status:</strong> Buying & Building</p>
+                        <p><strong>Plot Size:</strong> 500sqm</p>
+                    </div>
+
+                    <div class="sidebar-card map-card">
+                        <h3>Location Map</h3>
+                        <iframe src="https://maps.google.com/maps?q=Rehoboth%20Gardens%20Simawa%20Propertylink&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+
+                    <div class="sidebar-card contact-mini-card" id="contact">
+                        <h3>Inquire Now</h3>
+                        <!-- Replace 'your-id' with your Formspree ID -->
+                        <form action="https://formspree.io/f/your-id" method="POST">
+                            <input type="hidden" name="_subject" value="Inquiry for Rehoboth Gardens">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Propertylink Real Estate Investment Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348102350235" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Navbar Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
