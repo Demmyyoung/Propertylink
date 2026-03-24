@@ -61,7 +61,7 @@ ul {
     width: 25px;
     height: 18px;
     cursor: pointer;
-    z-index: 10001;
+    z-index: 1001; /* Standardized z-index */
     position: relative;
 }
 
@@ -160,11 +160,11 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
     transition: var(--transition);
 }
 
