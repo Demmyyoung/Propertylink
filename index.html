@@ -34,6 +34,7 @@
             <a href="#"><img src="img/logo.png" alt="Propertylink Logo"></a>
         </div>
         <ul class="nav-links">
+            <li class="close-menu" id="close-menu" style="display: none; position: absolute; top: 20px; right: 8%; font-size: 2rem; cursor: pointer; color: var(--primary);"><i class="fas fa-times"></i></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -275,14 +276,10 @@
             }
         });
 
-        // Mobile Menu Toggle
+        // Mobile Menu Toggle logic
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
+        const closeMenu = document.getElementById('close-menu');
 
         // Stats Counter Animation
         const stats = document.querySelectorAll('.stat-number');
@@ -314,6 +311,18 @@
         stats.forEach(stat => {
             statsObserver.observe(stat);
         });
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.add('active');
+            hamburger.classList.add('active');
+        });
+
+        if (closeMenu) {
+            closeMenu.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        }
 
         // Close menu when a link is clicked
         document.querySelectorAll('.nav-links a').forEach(link => {

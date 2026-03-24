@@ -16,6 +16,7 @@
             <a href="index.html"><img src="img/logo.png" alt="Propertylink Logo"></a>
         </div>
         <ul class="nav-links">
+            <li class="close-menu" id="close-menu" style="display: none; position: absolute; top: 20px; right: 8%; font-size: 2rem; cursor: pointer; color: var(--primary);"><i class="fas fa-times"></i></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -81,7 +82,7 @@
                 </a>
 
                 <!-- Property 4 -->
-                <div class="property-card">
+                <a href="potter-gardens.html" class="property-card">
                     <img src="img/Pillar Gardens.jpg" alt="Pillar Gardens">
                     <div class="property-info">
                         <h3>Pillar Gardens</h3>
@@ -91,9 +92,9 @@
                             <span>Affordable Luxury</span>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Property 5 -->
-                <div class="property-card">
+                <a href="peniel-court.html" class="property-card">
                     <img src="img/Country-Villa-Estate-1.png" alt="Country Villa Estate">
                     <div class="property-info">
                         <h3>Country Villa Estate</h3>
@@ -103,9 +104,9 @@
                             <span>Buy & Build</span>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Property 6 -->
-                <div class="property-card">
+                <a href="rehoboth-gardens.html" class="property-card">
                     <img src="img/Potter-Gardens.png" alt="Potter Gardens Phase 1">
                     <div class="property-info">
                         <h3>Potter Gardens (Phase 1)</h3>
@@ -115,7 +116,7 @@
                             <span>Sold Out / Appreciating</span>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -166,11 +167,25 @@
     <!-- Navbar Script -->
     <script>
         const hamburger = document.getElementById('hamburger');
+        const closeMenu = document.getElementById('close-menu');
         const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
+            navLinks.classList.add('active');
+            hamburger.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
         });
     </script>
 </body>

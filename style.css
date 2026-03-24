@@ -643,6 +643,10 @@ footer {
         right: 0;
     }
 
+    .close-menu {
+        display: block !important;
+    }
+
     .nav-links li {
         margin: 20px 0;
     }
