@@ -366,8 +366,9 @@ nav.scrolled {
 
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    width: 100%;
 }
 
 .property-card {
@@ -654,9 +655,20 @@ footer {
         font-size: 2.5rem;
     }
 
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
     .about, .contact-container {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .neighborhood-grid {
@@ -682,6 +694,11 @@ footer {
         padding: 40px 5%;
     }
 
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
     .stat-number {
         font-size: 2.2rem;
     }
@@ -692,6 +709,15 @@ footer {
 
     .service-card {
         padding: 30px 20px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .property-card img {
+        height: 200px;
     }
 
     .contact-container {
