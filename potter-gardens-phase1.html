@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peniel Coast Gardens | Propertylink</title>
+    <title>Potter Gardens (Phase 1) | Propertylink Real Estate Investment Ltd</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,13 +32,13 @@
     </nav>
 
     <!-- Header -->
-    <header class="property-details-header">
+    <header class="property-details-header" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/neighborhood_marina.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Home</a> / <a href="properties.html">Properties</a> / Peniel Coast Gardens
+                <a href="index.html">Home</a> / <a href="properties.html">Properties</a> / Potter Gardens Phase 1
             </div>
-            <h1>Peniel Coast Gardens</h1>
-            <p><i class="fas fa-map-marker-alt"></i> Akodo Ise, Ibeju-Lekki, Lagos</p>
+            <h1>Potter Gardens (Phase 1)</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Eleran Igbe, Ibeju-Lekki, Lagos</p>
         </div>
     </header>
 
@@ -47,43 +47,43 @@
         <div class="container">
             <div class="details-grid">
                 <div class="details-main">
-                    <img src="img/Peniel-Court-1.png" alt="Peniel Coast Gardens">
+                    <img src="img/Potter-Gardens.png" alt="Potter Gardens Phase 1">
                     <div class="details-info">
                         <h2>Description</h2>
-                        <p>Peniel Coast Gardens (frequently referred to as Peniel Court) is a prestigious mixed-use land development designed for residential and commercial investment. Located in the rapidly evolving Akodo Ise area of Ibeju-Lekki, it is situated perfectly for those seeking to capitalize on the region's massive industrial growth.</p>
-                        <p>The estate is in close proximity to major projects like the Dangote Refinery and the Lekki Free Trade Zone, making it a highly desirable asset with high appreciation potential. Its strategic location offers a blend of tranquility and industrial progress.</p>
+                        <p>Potter Gardens Phase 1 is a well-established residential estate that set the standard for high-quality, affordable housing in Ibeju-Lekki. As our flagship development in this axis, Phase 1 is a testament to Propertylink's commitment to delivering secure and value-driven real estate solutions.</p>
+                        <p>Currently fully occupied and rapidly appreciating in value, Phase 1 offers a glimpse into the lifestyle and security that our newer phases provide. It stands as a prime example of our successful "Buy, Build, and Bloom" philosophy.</p>
                         
                         <h2>Amenities</h2>
                         <div class="amenities-list">
-                            <div class="amenity-item"><i class="fas fa-road"></i> Premium Road Network</div>
-                            <div class="amenity-item"><i class="fas fa-shield-alt"></i> 24h Security</div>
-                            <div class="amenity-item"><i class="fas fa-bolt"></i> Electricity Supply</div>
-                            <div class="amenity-item"><i class="fas fa-tint"></i> Steady Water</div>
-                            <div class="amenity-item"><i class="fas fa-border-all"></i> Perimeter Fencing</div>
-                            <div class="amenity-item"><i class="fas fa-water"></i> drainage Channels</div>
+                            <div class="amenity-item"><i class="fas fa-road"></i> Paved Internal Roads</div>
+                            <div class="amenity-item"><i class="fas fa-shield-alt"></i> Manned Security Gates</div>
+                            <div class="amenity-item"><i class="fas fa-bolt"></i> Stable Electricity</div>
+                            <div class="amenity-item"><i class="fas fa-child"></i> Playgrounds</div>
+                            <div class="amenity-item"><i class="fas fa-border-all"></i> Perimeter Security</div>
+                            <div class="amenity-item"><i class="fas fa-water"></i> Effective Drainage</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="details-sidebar">
                     <div class="sidebar-card">
-                        <h3>Investment Details</h3>
-                        <div class="price-tag">₦9.5M - ₦11.5M</div>
-                        <p><strong>Title:</strong> Certificate of Occupancy (C of O)</p>
-                        <p><strong>Status:</strong> Mixed-Use Development</p>
-                        <p><strong>Plot Size:</strong> 600sqm</p>
+                        <h3>Estate Stats</h3>
+                        <div class="price-tag">Prime Phase</div>
+                        <p><strong>Title:</strong> Gazetted Certificate of Occupancy</p>
+                        <p><strong>Status:</strong> Sold Out (Secondary Market Only)</p>
+                        <p><strong>Plot Size:</strong> 600sqm Standard</p>
+                        <p><strong>Current Value:</strong> Highly Appreciating</p>
                     </div>
 
                     <div class="sidebar-card map-card">
                         <h3>Location Map</h3>
-                        <iframe src="https://maps.google.com/maps?q=Peniel%20Coast%20Gardens%20Ibeju%20Lekki&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=Eleran%20Igbe%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                     </div>
 
                     <div class="sidebar-card contact-mini-card" id="contact">
-                        <h3>Inquire Now</h3>
-                        <!-- Replace 'your-id' with your Formspree ID -->
+                        <h3>Inquire for Resale</h3>
                         <form action="https://formspree.io/f/your-id" method="POST">
-                            <input type="hidden" name="_subject" value="Inquiry for Peniel Coast Gardens">
+                            <input type="hidden" name="_subject" value="Inquiry for Potter Gardens Phase 1 Resale">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
@@ -118,10 +118,12 @@
             hamburger.classList.add('active');
         });
 
-        closeMenu.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
+        if (closeMenu) {
+            closeMenu.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        }
     </script>
 </body>
 </html>
