@@ -14,7 +14,7 @@
     
     /* Spacing */
     --section-padding: 100px 5%;
-    --border-radius: 12px;
+    --border-radius: 15px;
     
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -863,3 +863,66 @@ footer {
     .property-details-header { padding-top: 120px; }
 }
 
+/* About Page Dedicated Styles */
+.about-section {
+    padding: 100px 0;
+    background: var(--bg-dark);
+}
+
+.video-container {
+    margin-top: 40px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    background: #000;
+    border: 1px solid var(--glass-border);
+}
+
+.video-container video, 
+.video-container iframe {
+    display: block;
+    border: none;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.mv-card {
+    padding: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.mv-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.mv-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .video-grid, .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .about-section {
+        padding: 60px 0;
+    }
+}
