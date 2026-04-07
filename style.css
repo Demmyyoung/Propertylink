@@ -870,25 +870,63 @@ footer {
 }
 
 .video-container {
-    margin-top: 40px;
+    margin-top: 0;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     background: #000;
     border: 1px solid var(--glass-border);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.video-container video, 
-.video-container iframe {
-    display: block;
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
+}
+
+.video-info-tray {
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+}
+
+.video-info-tray h4 {
+    font-size: 1.1rem;
+    color: var(--text-main);
 }
 
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 50px;
+}
+
+.video-section-featured {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main-featured-video {
+    width: 70%; 
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .mission-vision {
